@@ -1,6 +1,6 @@
 # SIRD-vaccination
 Individual-level SIRD contact model for studying vaccination prioritization (implemented in Python). Notably:
-* Individuals are modeled explicitly
+* Individuals are modeled explicitly, including family units
 * Contacts between individuals are modeled explicitly (using sparse computations)
 * Vaccination of individuals is modeled explicitly
 * Symptom level is a factor of an individual's inherent vulnerability (mortality)
