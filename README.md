@@ -1,5 +1,5 @@
 # SIRD-vaccination
-Python individual-level SIRD model for studying vaccination prioritization. 
+Individual-level SIRD contact model for studying vaccination prioritization (implemented in Python). 
 
 Dependencies:
 * Numpy
