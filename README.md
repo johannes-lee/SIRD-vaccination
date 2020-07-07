@@ -14,14 +14,20 @@ Dependencies:
 * Matplotlib (for plotting)
 
 ## Methods
-Using Monte Carlo sampling of an individual-level SIRD model, we find a vaccination order based on contact rate, susceptibility (likelihood of infection given exposure), mortality (parameter modulating probability of symptom severity), infectivity (likelihod of transmission), symptom level, and home size, as well as the maximum value of each variable within an individual's household.
+Using Monte Carlo sampling of an individual-level SIRD model, we find a vaccination order based on contact rate, susceptibility (likelihood of infection given exposure), mortality (parameter modulating probability of symptom severity), infectivity (likelihod of transmission), symptom level, and home size, as well as the maximum value of each variable within an individual's household. The vaccination ordering is represented by a function from 11 dimensions to 1 dimensions, and is optimized for a linear function and a two-layer neural network. Optimization is performed using a least squares approach, or with the REINFORCE algorithm (Williams, 1992). 
+
+At each day, the λ individuals with highest priority indicated by the vaccination ordering function are vaccinated, with the objective being to find a vaccination ordering function which minimizes the total number of deaths.
 
 ## Results
+The least squares (linear) solution yields the lowest average deaths over 1000 trials, with a 0.388% of total population reduction of deaths compared to random vaccination.
 
 <img src="/images/bars.png" width="400">
 
+Looking at the weights of each variable of the optimal least squares vaccination ordering function, we see that the most vulnerable, i.e. those with the highest mortality variable, are prioritized, while those with symptoms are deprioritized. 
+
 <img src="/images/weights.png" width="400">
 
+asdf
 ## Conclusions
 Overall, findings are similar to, but not equivalent to, the [CDC vaccination prioritization guidelines for influenza](https://www.cdc.gov/flu/pandemic-resources/national-strategy/planning-guidance/index.html).
 
