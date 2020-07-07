@@ -19,17 +19,16 @@ Using Monte Carlo sampling of an individual-level SIRD model, we find a vaccinat
 At each day, the λ individuals with highest priority indicated by the vaccination ordering function are vaccinated, with the objective being to find a vaccination ordering function which minimizes the total number of deaths.
 
 ## Results
-The least squares (linear) solution yields the lowest average deaths over 1000 trials, with a 0.388% of total population reduction of deaths compared to random vaccination.
+The least squares (linear) solution yields the lowest average deaths over 1000 trials, with a 0.388% of total population reduction of deaths compared to random vaccination (0.388% of the US's 327 million people is 1.27 million deaths). 
 
 <img src="/images/bars.png" width="400">
 
-Looking at the weights of each variable of the optimal least squares vaccination ordering function, we see that the most vulnerable, i.e. those with the highest mortality variable, are prioritized, while those with symptoms are deprioritized. 
+Looking at the weights of each variable of the optimal least squares vaccination ordering function, we see that the most vulnerable, i.e. those with the highest mortality variable, are prioritized, while those with symptoms are deprioritized. Outside contact rate also plays a strong role in vaccination priority.
 
 <img src="/images/weights.png" width="400">
 
-asdf
 ## Conclusions
-Overall, findings are similar to, but not equivalent to, the [CDC vaccination prioritization guidelines for influenza](https://www.cdc.gov/flu/pandemic-resources/national-strategy/planning-guidance/index.html).
+Overall, findings are similar to, but not equivalent to, the [CDC vaccination prioritization guidelines for influenza](https://www.cdc.gov/flu/pandemic-resources/national-strategy/planning-guidance/index.html). This allows us to formulate a (simple) COVID-19-specific flowchart which separates individuals into several vaccination priority groups:
 
 <img src="/images/prioritytree.png" width="400">
 
