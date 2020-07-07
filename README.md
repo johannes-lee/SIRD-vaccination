@@ -3,6 +3,7 @@ Individual-level SIRD contact model for studying vaccination prioritization (imp
 * Individuals are modeled explicitly, including family units
 * Contacts between individuals are modeled explicitly (using sparse computations)
 * Vaccination of individuals is modeled explicitly
+* Symptom level modeled (including asymptomatic carriers)
 * Symptom level is a factor of an individual's inherent vulnerability (mortality)
 * Probability of death related to symptom level
 
