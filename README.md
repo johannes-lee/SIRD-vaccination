@@ -18,6 +18,8 @@ Using Monte Carlo sampling of an individual-level SIRD model, we find a vaccinat
 
 At each day, the λ individuals with highest priority indicated by the vaccination ordering function are vaccinated, with the objective being to find a vaccination ordering function which minimizes the total number of deaths.
 
+*Note: the simulated infection mortality rate is higher that what is now understood to be the true infection mortality rate.*
+
 ## Results
 The least squares (linear) solution yields the lowest average deaths over 1000 trials, with a 0.388% of total population reduction of deaths compared to random vaccination (0.388% of the US's 327 million people is 1.27 million deaths). 
 
